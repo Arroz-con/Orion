@@ -1757,18 +1757,7 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	
 	return TabFunction
-end   
-
--- custom
-function OrionLib:MinimizeGUI()
-	TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, 615, 0, 344)}):Play()
-	MinimizeBtn.Ico.Image = "rbxassetid://7072719338"
-	wait(.02)
-	MainWindow.ClipsDescendants = false
-	WindowStuff.Visible = true
-	WindowTopBarLine.Visible = true
-
-end	
+end   	
 
 
 function OrionLib:Destroy()
