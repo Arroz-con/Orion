@@ -727,8 +727,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		LoadSequence()
 	end
 
-	MainWindow.Visible = false
-	UIHidden = true
+	MainWindow.Visible = true
+	UIHidden = false
 
 	local TabFunction = {}
 	function TabFunction:MakeTab(TabConfig)
